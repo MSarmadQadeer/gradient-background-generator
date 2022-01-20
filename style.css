@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --text-color: rgba(0, 0, 0, 0.65);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  /* background: linear-gradient(to right, #66fffc, #00ff6e); */
+  /* background: linear-gradient(to right, #00fffb, #ff3dc2); */
+  /* background: linear-gradient(to right, #ffc3a0, #ffafbd); */
+  background: linear-gradient(to right, #ec77ab, #7873f5);
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.content {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content h1 {
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.content h2 {
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.content p {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.content article {
+  display: flex;
+  gap: 1rem;
+}
+
+article input {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content h2 {
+    font-size: 1.3rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .content h1 {
+    font-size: 1.4rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+}
